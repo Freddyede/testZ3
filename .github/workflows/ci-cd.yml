@@ -44,6 +44,4 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           script: |
-            cd /path/to/your/app
-            docker-compose pull
-            docker-compose up -d
+            docker-compose up --build
